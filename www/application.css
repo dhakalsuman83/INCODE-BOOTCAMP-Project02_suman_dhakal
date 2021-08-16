@@ -322,9 +322,13 @@ section h3, section p{
      margin: 20px auto;
  }
 
+ .form-flex div label{
+   margin-bottom: 10px;
+}
+
  .contact-btn{
     align-self: center;
-    width:50%;
+    width:35%;
     font-size:1rem;
     font-weight: 600;
     margin-top:20px;
@@ -375,7 +379,7 @@ section h3, section p{
 /* modal styling */
 .modal-container{
     font-size: 20px;
-    display:block;
+    display:none;
     position: fixed;
     top: 0;
     left: 0;
@@ -386,7 +390,7 @@ section h3, section p{
 }
 
 .modal-content{
-    width: 65%;
+    width: 70%;
     height:70%;
     margin: 10% auto;
     background-color: hsl(0, 0%, 99%) ;
