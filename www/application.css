@@ -252,10 +252,7 @@ section h3, section p{
 /* About page styling */
 
 .about-image{
-    background-size:cover;
-    height: 31rem;
-    
-    
+    width: 31rem;
 }
 
 .flex-column {
@@ -298,11 +295,23 @@ section h3, section p{
      margin: 0 auto 3rem auto;
  }
 
- .flex-column-contact1, .flex-column-contact2{
+ .flex-column-contact1, 
+ .flex-column-contact2 {
      margin-bottom: 2rem;
  }
 
+ .contact-image{
+     width:100%;
+ }
 
+/* form styling */
+
+.form-flex{
+    width:70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
 .form-flex label{
     display: block;
 }
@@ -312,21 +321,38 @@ section h3, section p{
     font-size: 1rem;
     padding-left:10px;
     width:100%;
-    height: 2rem;
+    height: 2.5rem;
     background-color: rgba(196, 202, 208, 1);
     border: none;
+    color: white;
 }
 
- .form-flex{
-     width:55%;
-     margin: 20px auto;
- }
-
- .form-flex div label{
-   margin-bottom: 10px;
+.form-flex textarea{
+    background-color: rgba(196, 202, 208, 1);
+    width:100%;
+    padding-left:10px;
+    padding-top: 10px;
+    border: none;
+    resize: none;
 }
 
- .contact-btn{
+.form-flex textarea::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+
+
+.form-flex > *{
+   margin-bottom: 30px;
+}
+
+.form-flex0 {
+    align-self: center;
+    font-size: 1.8rem;
+
+}
+
+.contact-btn{
     align-self: center;
     width:35%;
     font-size:1rem;
@@ -340,7 +366,7 @@ section h3, section p{
     background-color: rgba(106, 123, 139, 1);
  }
 
- .modal-btn{
+.modal-btn{
     font-size:1rem;
     font-weight: 600;
     margin-top:20px;
@@ -494,6 +520,10 @@ section h3, section p{
 
     .footer-img{
         padding-top: 1rem;
+    }
+
+    .form-flex{
+        width:90%;
     }
 }
 
