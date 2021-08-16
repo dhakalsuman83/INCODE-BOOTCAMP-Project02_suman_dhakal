@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./application.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="flex header-flex">
+            <img class="header-img header-flex-items header-flex-item1" src="./Assets/full_logo_white.png" alt="white logo of Mr.coffee">
+            <a class="header-flex-items header-flex-item2" href="./index.html">Accueil</a>
+            <a class="header-flex-items header-flex-item3" href="./about.html">Qui sommes-nous?</a>
+            <a class="header-flex-items header-flex-item4" href="./contact.html">Nous contacter</a>
+        </div>
+        <img class="main-logo" src="./Assets/logo_mrcoffee.png" alt="Main logo of the Coffee shop">
+    </header>
+
+    <main>
+        <form action="" method="" class="form flex-column form-flex">
+            <div class="form-flex1">
+                <label for="name">Nom *</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-flex2">
+                <label for="firstName">Prénom *</label>
+                <input type="text" id="firstName">
+            </div>
+            <div class="form-flex3" >
+                <label for="telephone">Téléphone</label>
+                <input type="number" id="telophone">
+            </div>
+            <div class="form-flex4">
+                <label for="email">Adresse mail *</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-flex5">
+                <label for="message">Message *</label>
+                <input type="text" id="message" placeholder="Tapez votre message ici">
+            </div>
+            <button class="contact-btn">ENVOYER</button>
+        </form>
+        <div class="modal-container">  
+            <div class="modal-content flex-modal">  
+                <img src="./Assets/logo_dark.png" alt="dark logo of coffee shop" class="modal-logo flex-modal-items1">
+                <div class="flex-modal-items2 flex-modal-column">
+                    <h2><strong>MERCI</strong></h1>
+                    <h2>Votre message a bien été envoyé !</h2>
+                    <p>Nous essaierons d’y répondre au mieux dans les plus brefs<br> délais. À bientot chez Mr.Coffee</p>
+                    <button class="modal-btn">FERMER</buttom>
+                </div>
+            </div>
+        </div>
+        <h2 class="contact-h2">On vous attend !</h2>
+        <div class="flex-column-contact">
+            <p class="flex-column-contact1"><b>Mr.Coffee</b><br />15 place Jules Guesde<br />75006 Paris</p>
+            <p class="flex-column-contact2">Tel : +33 9 46 25 78 45<br />Mail : contact@mr-coffee.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.2532961488523!2d2.291773215854389!3d48.891509706328044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9b766fd6b3%3A0xa6d26a029532dfb7!2s15%20Rue%20Jules%20Guesde%2C%2092300%20Levallois-Perret%2C%20France!5e0!3m2!1sen!2sau!4v1628827218253!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer class="flex footer-flex">
+        <img class="footer-img header-flex-items footer-flex-items1" src="./Assets/logo_blanc.png" alt="black logo of the coffee shop">
+        <div class="flex footer-flex-items2">
+            <p>Suivez nous sur les réseaux sociaux !</p>
+            <div class="flex flex-social-logos">
+                <img class="logo-items logo_linkedin" src="./Assets/logo_linkedin.png" alt="A samll linkedin logo" >
+                <img class="logo-items logo_twitter" src="./Assets/logo_twitter.png" alt="A small twitter logo">
+                <img class="logo-items logo_facebook" src="./Assets/logo_facebook.png" alt="A small facebook logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
