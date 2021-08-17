@@ -330,6 +330,7 @@ section h3, section p{
 
 .form-flex textarea{
     background-color: rgba(196, 202, 208, 1);
+    color: white;
     width:100%;
     padding-left:10px;
     padding-top: 10px;
