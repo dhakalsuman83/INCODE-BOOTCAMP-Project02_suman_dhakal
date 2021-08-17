@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./application.css">
+    <script src="https://kit.fontawesome.com/34140e5df6.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -21,28 +22,43 @@
 
     <main>
         
-        <form action="" method="" class="form form-flex" >
-            <h2 class="form-flex0">Dites nous tout !</h2>
-            <div class="form-flex1">
-                <label for="name">Nom *</label>
-                <input type="text" id="name">
+        <form action="" method="" class="form form-flex" id="form" >
+            <h2>Dites nous tout !</h2>
+            <div class="form-control" form-control">
+                <label for="lastname">Nom *</label>
+                <input type="text" id="lastname">
+                <i class="far fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
             </div>
-            <div class="form-flex2">
-                <label for="firstName">Prénom *</label>
-                <input type="text" id="firstName">
+            <div class="form-control">
+                <label for="firstname">Prénom *</label>
+                <input type="text" id="firstname">
+                <i class="far fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
             </div>
-            <div class="form-flex3" >
+            <div class="form-control" >
                 <label for="telephone">Téléphone</label>
-                <input type="number" id="telophone">
+                <input type="number" id="telephone">
+                <i class="far fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
             </div>
-            <div class="form-flex4">
+            <div class="form-control">
                 <label for="email">Adresse mail *</label>
                 <input type="email" id="email">
+                <i class="far fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
             </div>
             <div class="form-flex5">
                 <label for="message">Message *</label>
                 <!-- <input type="text" id="message" placeholder="Tapez votre message ici"> -->
                 <textarea id="message" cols="50" rows="10" placeholder="Tapez votre message ici"></textarea>
+                <!-- <i class="far fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small> -->
             </div>
             <button class="contact-btn">ENVOYER</button>
         </form>

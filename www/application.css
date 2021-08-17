@@ -311,6 +311,7 @@ section h3, section p{
     margin: 20px auto;
     display: flex;
     flex-direction: column;
+    position:relative;
 }
 .form-flex label{
     display: block;
@@ -346,7 +347,7 @@ section h3, section p{
    margin-bottom: 30px;
 }
 
-.form-flex0 {
+.form-flex>h2 {
     align-self: center;
     font-size: 1.8rem;
 
@@ -387,19 +388,45 @@ section h3, section p{
     background-color: rgb(101, 102, 102);
  }
 
- .form-flex5,.form-flex4,.form-flex3,.form-flex2,.form-flex1, .contact-btn{
-     margin-bottom: 25px;
- }
 
-.form-flex5 input{
-        height:8rem;
+ /* validation css ------------------------*/
+
+.fa-check-circle, .fa-exclamation-circle{
+   
+    position: absolute;
+    /* color: rgb(49, 216, 49); */
+    right:0;
+    transform: translate(-20%,-180%);
 }
 
-.form-flex5 input::placeholder{
-    color:white;
+.fa-check-circle, .fa-exclamation-circle, small{
+     visibility: hidden;
+}
+
+.form-control.success .fa-check-circle{
+    visibility:visible;
+    color: rgb(10, 212, 10);
 }
 
 
+.form-control.success input{
+    border: 3px solid rgb(10, 212, 10);  
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: rgba(221, 6, 6, 0.966);
+}
+
+.form-control.error .fa-exclamation-circle {
+    visibility: visible;
+    color: rgba(221, 6, 6, 0.966)
+}
+
+.form-control.error input{
+    border: 3px solid red;
+   
+}
 
 
 /* modal styling */
