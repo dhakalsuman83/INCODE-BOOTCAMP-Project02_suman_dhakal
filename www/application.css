@@ -1,4 +1,5 @@
 * {
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -336,6 +337,7 @@ section h3, section p{
     padding-top: 10px;
     border: none;
     resize: none;
+    font-size: 1rem;
 }
 
 .form-flex textarea::placeholder{
@@ -553,9 +555,15 @@ section h3, section p{
     .form-flex{
         width:90%;
     }
+
+    .modal-content {
+        width: 90%;
+        padding: 2em 2em;
+    }
 }
 
 @media screen and (max-width:480px){
+
     html{
        font-size: 12px;
     }
@@ -644,5 +652,24 @@ section h3, section p{
 
     .flex-column-items{
         margin-bottom: 2rem;
+    }
+
+    .flex-modal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 0.5em 0.5em;
+    }
+
+    .modal-logo {
+        margin-bottom: 50px;
+    }
+
+    .flex-modal-column {
+        /* align-content: center; */
+        height: 110%;
     }
 }
