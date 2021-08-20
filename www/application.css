@@ -340,6 +340,11 @@ section h3, section p{
     font-size: 1rem;
 }
 
+.form-flex input:focus,
+.form-flex textarea:focus{
+    outline: none;
+}
+
 .form-flex textarea::placeholder{
     color: white;
     font-size: 1rem;
@@ -399,7 +404,7 @@ section h3, section p{
     position: absolute;
     /* color: rgb(49, 216, 49); */
     right:0;
-    transform: translate(-20%,-180%);
+    transform: translate(-30%,-180%);
 }
 
 .fa-check-circle, .fa-exclamation-circle, small{
@@ -428,7 +433,7 @@ section h3, section p{
 
 .form-control.error input{
     border: 3px solid red;
-   
+    
 }
 
 
